@@ -1,16 +1,13 @@
 import React from "react";
 import styled from 'styled-components'
-import { Anchor } from "antd";
 
-const { Link } = Anchor;
-
-const StyledWelcome = styled.h4`
+const StyledWelcome = styled.h3`
   margin-bottom: 1.5rem;
 `
 
 export default () => (
   <div>
-    <StyledWelcome>Welcome!</StyledWelcome>    
+    <StyledWelcome>Welcome!</StyledWelcome>
     <p>
       The exercise of each communication methods can be accessed via the side
       menu.

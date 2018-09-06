@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Layout, Menu, Icon } from "antd";
 import logo from '../logo.svg';
+import { CONTENT_KEY } from '../constants';
 import ContentRoute from "./ContentRoute";
 
 const { SubMenu } = Menu;
@@ -16,28 +17,42 @@ const StyledHeaderTitle = styled.h2`
 `;
 
 class MainLayout extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      openingContent: CONTENT_KEY.HOME
+    }
+  }
+
+  handleMenuSelect = ({ key }) => {
+    this.setState({
+      openingContent: key
+    });
+  }
+
   render() {
     return (
       <StyledLayout>
         <Sider>
           <img src={logo} alt="logo" />
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={["home"]}>
-            <Menu.Item key="home"><Icon type="home" />Home</Menu.Item>
+          <Menu theme="dark" mode="inline" defaultSelectedKeys={[this.state.openingContent]} onSelect={this.handleMenuSelect}>
+            <Menu.Item key={CONTENT_KEY.HOME}><Icon type="home" />Home</Menu.Item>
             <SubMenu key="parent-to-child" title={<span><Icon type="share-alt" />Parent to Child</span>}>
-              <Menu.Item key="props">Props</Menu.Item>
-              <Menu.Item key="instance-methods">Instance Methods</Menu.Item>
+              <Menu.Item key={CONTENT_KEY.EX_PROPS}>Props</Menu.Item>
+              <Menu.Item key={CONTENT_KEY}>Instance Methods</Menu.Item>
             </SubMenu>
             <SubMenu key="child-to-parent" title={<span><Icon type="to-top" />Child to Parent</span>}>
-              <Menu.Item key="callback-functions">Callback Functions</Menu.Item>
-              <Menu.Item key="event-bubbling">Event Bubbling</Menu.Item>
+              <Menu.Item key={CONTENT_KEY.EX_CALLBACK_FUNCTIONS}>Callback Functions</Menu.Item>
+              <Menu.Item key={CONTENT_KEY.EX_EVENT_BUBBLING}>Event Bubbling</Menu.Item>
             </SubMenu>
             <SubMenu key="sibling-to-sibling" title={<span><Icon type="team" />Sibling to Sibling</span>}>
-              <Menu.Item key="parent-component">Parent Component</Menu.Item>
+              <Menu.Item key={CONTENT_KEY.EX_PARENT_COMPONENT}>Parent Component</Menu.Item>
             </SubMenu>
             <SubMenu key="any-to-any" title={<span><Icon type="notification" />Any to Any</span>}>
-              <Menu.Item key="observer-pattern">Observer Pattern</Menu.Item>
-              <Menu.Item key="global-variables">Global Variables</Menu.Item>
-              <Menu.Item key="context">Context</Menu.Item>
+              <Menu.Item key={CONTENT_KEY.EX_OBSERVER_PATTERN}>Observer Pattern</Menu.Item>
+              <Menu.Item key={CONTENT_KEY.EX_GLOBAL_VARIABLES}>Global Variables</Menu.Item>
+              <Menu.Item key={CONTENT_KEY.EX_CONTEXT}>Context</Menu.Item>
             </SubMenu>
           </Menu>
         </Sider>
@@ -53,7 +68,7 @@ class MainLayout extends Component {
               minHeight: 280
             }}
           >
-            <ContentRoute />
+            <ContentRoute contentKey={this.state.openingContent} />
           </Content>
         </Layout>
       </StyledLayout>
