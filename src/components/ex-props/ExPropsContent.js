@@ -10,7 +10,8 @@ const TreeNode = Tree.TreeNode;
 export default exerciseContent(
   "Props", 
   <div>
-    <p>By modifying following files, please make the text value in <Code>Child</Code> component to automatically sync with the input of the textfield in <Code>Parent</Code> component.</p>
+    <p>
+      By modifying following files.</p>
     <DirectoryTree
         multiple
         defaultExpandAll
@@ -26,6 +27,12 @@ export default exerciseContent(
           </TreeNode>
         </TreeNode>
       </DirectoryTree>
+    <p>
+      Please make the text value in <Code>Child</Code> component to automatically sync with the input of the textfield in <Code>Parent</Code> component.
+    </p>
+    <p>
+      Using <Code>Props</Code> strategy as described in <a href="https://www.javascriptstuff.com/component-communication/#1-props" target="_blank">https://www.javascriptstuff.com/component-communication/#1-props</a>
+    </p>
   </div>,
   <Parent />
 );
