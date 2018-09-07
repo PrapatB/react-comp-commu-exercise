@@ -18,7 +18,7 @@ export default exerciseContent(
       >
         <TreeNode title="src" key="src">
           <TreeNode title="components" key="components">
-            <TreeNode title="ex-props" key="ex-props">
+            <TreeNode title="ex-intance-methods" key="ex-intance-methods">
               <TreeNode title="Parent.js" key="Parent.js" isLeaf />
               <TreeNode title="Child.js" key="Child.js" isLeaf />
             </TreeNode>
@@ -29,7 +29,7 @@ export default exerciseContent(
       Please make the text value in <Code>Child</Code> component to automatically sync with the input of the textfield in <Code>Parent</Code> component.
     </p>
     <p>
-      Using <Code>Props</Code> strategy as described in <a href="https://www.javascriptstuff.com/component-communication/#1-props" target="_blank">https://www.javascriptstuff.com/component-communication/#1-props</a>
+      Using <Code>Instance Methods</Code> strategy as described in <a href="https://www.javascriptstuff.com/component-communication/#2-instance-methods" target="_blank">https://www.javascriptstuff.com/component-communication/#2-instance-methods</a>
     </p>
   </div>,
   () => <Parent />
