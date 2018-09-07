@@ -9,7 +9,7 @@ const TreeNode = Tree.TreeNode;
 
 export default exerciseContent(
   "Props", 
-  <div>
+  () => <div>
     <p>
       By modifying following files.</p>
     <DirectoryTree
@@ -34,5 +34,5 @@ export default exerciseContent(
       Using <Code>Props</Code> strategy as described in <a href="https://www.javascriptstuff.com/component-communication/#1-props" target="_blank">https://www.javascriptstuff.com/component-communication/#1-props</a>
     </p>
   </div>,
-  <Parent />
+  () => <Parent />
 );

@@ -24,11 +24,13 @@ const StyledTitle = styled.h3`
 export default (title, DetailComponent, ResultComponent) => () => (
   <div>
     <StyledTitle>{title}</StyledTitle>
-    <StyledDetailWrapper>{DetailComponent}</StyledDetailWrapper>
+    <StyledDetailWrapper>
+      <DetailComponent />
+    </StyledDetailWrapper>
     <StyledResultWrapper>
       <StyledLegend>Result</StyledLegend>
       <ErrorBoundary>
-        {ResultComponent}
+        <ResultComponent />
       </ErrorBoundary>
     </StyledResultWrapper>
   </div>
