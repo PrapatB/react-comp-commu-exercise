@@ -13,12 +13,12 @@ export default exerciseContent(
     <p>
       By modifying following files.
     </p>
-    <DirectoryTree        
+    <DirectoryTree
         defaultExpandAll
       >
         <TreeNode title="src" key="src">
           <TreeNode title="components" key="components">
-            <TreeNode title="ex-intance-methods" key="ex-intance-methods">
+            <TreeNode title="ex-callback-functions" key="ex-callback-functions">
               <TreeNode title="Parent.js" key="Parent.js" isLeaf />
               <TreeNode title="Child.js" key="Child.js" isLeaf />
             </TreeNode>
@@ -26,10 +26,10 @@ export default exerciseContent(
         </TreeNode>
       </DirectoryTree>
     <p>
-      Please make the text value in <Code>Child</Code> component to automatically sync with the input of the textfield in <Code>Parent</Code> component.
+      Please make the text value in <Code>Parent</Code> component to automatically sync with the input of the textfield in <Code>Child</Code> component.
     </p>
     <p>
-      Using <Code>Instance Methods</Code> strategy as described in <a href="https://www.javascriptstuff.com/component-communication/#2-instance-methods" target="_blank">https://www.javascriptstuff.com/component-communication/#2-instance-methods</a>
+      Using <Code>Callback Functions</Code> strategy as described in <a href="https://www.javascriptstuff.com/component-communication/#3-callback-functions" target="_blank">https://www.javascriptstuff.com/component-communication/#3-callback-functions</a>
     </p>
   </div>,
   () => <Parent />

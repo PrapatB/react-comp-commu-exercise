@@ -11,9 +11,9 @@ export default exerciseContent(
   "Props", 
   () => <div>
     <p>
-      By modifying following files.</p>
+      By modifying following files.
+    </p>
     <DirectoryTree
-        multiple
         defaultExpandAll
       >
         <TreeNode title="src" key="src">
