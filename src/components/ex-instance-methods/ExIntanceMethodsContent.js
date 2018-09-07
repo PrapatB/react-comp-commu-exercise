@@ -8,7 +8,7 @@ const DirectoryTree = Tree.DirectoryTree;
 const TreeNode = Tree.TreeNode;
 
 export default exerciseContent(
-  "Props", 
+  'Instance Methods', 
   () => <div>
     <p>
       By modifying following files.

@@ -4,6 +4,7 @@ import Home from "./Home";
 import ExPropsContent from "./ex-props/ExPropsContent";
 import ExIntanceMethodsContent from "./ex-instance-methods/ExIntanceMethodsContent";
 import ExCallbackFunctionsContent from "./ex-callback-functions/ExCallbackFunctionsContent";
+import ExEventBubblingContent from "./ex-event-bubbling/ExEventBubblingContent";
 
 export default () => {
   return (
@@ -12,6 +13,7 @@ export default () => {
       <Route path="/props" component={ExPropsContent} />
       <Route path="/instance_methods" component={ExIntanceMethodsContent} />
       <Route path="/callback_functions" component={ExCallbackFunctionsContent} />
+      <Route path="/event_bubbling" component={ExEventBubblingContent} />
       <Route component={() => <div>Coming soon ...</div>} />
     </Switch>
   )

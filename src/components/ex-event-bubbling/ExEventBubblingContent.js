@@ -8,7 +8,7 @@ const DirectoryTree = Tree.DirectoryTree;
 const TreeNode = Tree.TreeNode;
 
 export default exerciseContent(
-  'Props', 
+  'Event Bubbling', 
   () => <div>
     <p>
       By modifying following files.
@@ -18,7 +18,7 @@ export default exerciseContent(
       >
         <TreeNode title="src" key="src">
           <TreeNode title="components" key="components">
-            <TreeNode title="ex-props" key="ex-props">
+            <TreeNode title="ex-callback-functions" key="ex-callback-functions">
               <TreeNode title="Parent.js" key="Parent.js" isLeaf />
               <TreeNode title="Child.js" key="Child.js" isLeaf />
             </TreeNode>
@@ -26,10 +26,10 @@ export default exerciseContent(
         </TreeNode>
       </DirectoryTree>
     <p>
-      Please make the text value in <Code>Child</Code> component to automatically sync with the input of the textfield in <Code>Parent</Code> component.
+      Please make the text value in <Code>Parent</Code> component to automatically sync with the input of the textfield in <Code>Child</Code> component.
     </p>
     <p>
-      Using <Code>Props</Code> strategy as described in <a href="https://www.javascriptstuff.com/component-communication/#1-props" target="_blank">https://www.javascriptstuff.com/component-communication/#1-props</a>
+      Using <Code>Event Bubbling</Code> strategy as described in <a href="https://www.javascriptstuff.com/component-communication/#4-event-bubbling" target="_blank">https://www.javascriptstuff.com/component-communication/#4-event-bubbling</a>
     </p>
   </div>,
   () => <Parent />
