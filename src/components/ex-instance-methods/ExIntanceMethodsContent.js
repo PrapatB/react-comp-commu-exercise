@@ -29,7 +29,7 @@ export default exerciseContent(
       Please make the text value in <Code>Child</Code> component to automatically sync with the input of the textfield in <Code>Parent</Code> component.
     </p>
     <p>
-      Using <Code>Instance Methods</Code> strategy as described in <a href="https://www.javascriptstuff.com/component-communication/#2-instance-methods" target="_blank">https://www.javascriptstuff.com/component-communication/#2-instance-methods</a>
+      Using <Code>Instance Methods</Code> strategy described in <a href="https://www.javascriptstuff.com/component-communication/#2-instance-methods" target="_blank">https://www.javascriptstuff.com/component-communication/#2-instance-methods</a>
     </p>
   </div>,
   () => <Parent />

@@ -18,7 +18,7 @@ export default exerciseContent(
       >
         <TreeNode title="src" key="src">
           <TreeNode title="components" key="components">
-            <TreeNode title="ex-callback-functions" key="ex-callback-functions">
+            <TreeNode title="ex-event-bubbling" key="ex-event-bubbling">
               <TreeNode title="Parent.js" key="Parent.js" isLeaf />
               <TreeNode title="Child.js" key="Child.js" isLeaf />
             </TreeNode>
@@ -29,7 +29,7 @@ export default exerciseContent(
       Please make the text value in <Code>Parent</Code> component to automatically sync with the input of the textfield in <Code>Child</Code> component.
     </p>
     <p>
-      Using <Code>Event Bubbling</Code> strategy as described in <a href="https://www.javascriptstuff.com/component-communication/#4-event-bubbling" target="_blank">https://www.javascriptstuff.com/component-communication/#4-event-bubbling</a>
+      Using <Code>Event Bubbling</Code> strategy described in <a href="https://www.javascriptstuff.com/component-communication/#4-event-bubbling" target="_blank">https://www.javascriptstuff.com/component-communication/#4-event-bubbling</a>
     </p>
   </div>,
   () => <Parent />

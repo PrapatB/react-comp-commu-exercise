@@ -18,7 +18,7 @@ export default exerciseContent(
       >
         <TreeNode title="src" key="src">
           <TreeNode title="components" key="components">
-            <TreeNode title="ex-callback-functions" key="ex-callback-functions">
+            <TreeNode title="ex-parent-component" key="ex-parent-component">
               <TreeNode title="Parent.js" key="Parent.js" isLeaf />
               <TreeNode title="ChildA.js" key="ChildA.js" isLeaf />
               <TreeNode title="ChildB.js" key="ChildB.js" isLeaf />
@@ -30,7 +30,7 @@ export default exerciseContent(
       Please make the value of textfield in both <Code>ChildA</Code> component and <Code>ChildB</Code> component to always synced.
     </p>
     <p>
-      Using <Code>Parent Component</Code> strategy as described in <a href="https://www.javascriptstuff.com/component-communication/#5-parent-component" target="_blank">https://www.javascriptstuff.com/component-communication/#5-parent-component</a>
+      Using <Code>Parent Component</Code> strategy described in <a href="https://www.javascriptstuff.com/component-communication/#5-parent-component" target="_blank">https://www.javascriptstuff.com/component-communication/#5-parent-component</a>
     </p>
   </div>,
   () => <Parent />
