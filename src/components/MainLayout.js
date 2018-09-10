@@ -35,6 +35,7 @@ class MainLayout extends Component {
             </Header>
             <Content
               style={{
+                overflowY: "auto",
                 margin: "24px 16px",
                 padding: 24,
                 background: "#fff",

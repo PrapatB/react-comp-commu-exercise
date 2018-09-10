@@ -47,8 +47,8 @@ class Tabs extends Component {
           </Menu>
         </StyledHeader>
         <Content>
-          { this.state.current === 'todo' && <TodoList /> }
-          { this.state.current === 'summary' && <Summary /> }
+          <div style={{ display: this.state.current === 'todo' ? 'block' : 'none' }}><TodoList /></div>
+          <div style={{ display: this.state.current === 'summary' ? 'block' : 'none' }}><Summary /></div>
         </Content>
       </Layout>      
     );
