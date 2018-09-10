@@ -7,6 +7,7 @@ import ExCallbackFunctionsContent from "./ex-callback-functions/ExCallbackFuncti
 import ExEventBubblingContent from "./ex-event-bubbling/ExEventBubblingContent";
 import ExParentComponentContent from "./ex-parent-component/ExParentComponentContent";
 import ExObserverPatternContent from "./ex-observer-pattern/ExObserverPatternContent";
+import ExGlobalVariablesContent from "./ex-global-variables/ExGlobalVariablesContent";
 
 export default () => {
   return (
@@ -18,6 +19,7 @@ export default () => {
       <Route path="/event_bubbling" component={ExEventBubblingContent} />
       <Route path="/parent_component" component={ExParentComponentContent} />
       <Route path="/observer_pattern" component={ExObserverPatternContent} />
+      <Route path="/global_variables" component={ExGlobalVariablesContent} />
       <Route component={() => <div>Coming soon ...</div>} />
     </Switch>
   )
