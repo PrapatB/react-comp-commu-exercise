@@ -6,6 +6,7 @@ import ExIntanceMethodsContent from "./ex-instance-methods/ExIntanceMethodsConte
 import ExCallbackFunctionsContent from "./ex-callback-functions/ExCallbackFunctionsContent";
 import ExEventBubblingContent from "./ex-event-bubbling/ExEventBubblingContent";
 import ExParentComponentContent from "./ex-parent-component/ExParentComponentContent";
+import ExObserverPatternContent from "./ex-observer-pattern/ExObserverPatternContent";
 
 export default () => {
   return (
@@ -16,6 +17,7 @@ export default () => {
       <Route path="/callback_functions" component={ExCallbackFunctionsContent} />
       <Route path="/event_bubbling" component={ExEventBubblingContent} />
       <Route path="/parent_component" component={ExParentComponentContent} />
+      <Route path="/observer_pattern" component={ExObserverPatternContent} />
       <Route component={() => <div>Coming soon ...</div>} />
     </Switch>
   )
